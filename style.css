@@ -16,7 +16,7 @@
 :root{
     --bg-color: #cbcbcf;
     --text-color: black;
-    --main-color: rgb(0, 140, 255);
+    --main-color: rgb(123, 0, 255);
     --white-color: white;
     --shadow-color: rgba(0, 0, 0, .5);
 }
@@ -147,7 +147,7 @@ section{
     border-radius: 50%;
     box-shadow: 0 .2rem .5rem var(--shadow-color);
     font-size: 2rem;
-    color: green;
+    color: var(--main-color);
     margin: 2.5rem 1.5rem 3rem 0;
     transition: .5s ease;
 }
@@ -330,7 +330,7 @@ span{
 	text-align: center;
     border-top: .6rem solid var(--main-color);
     border-bottom: .6rem solid var(--main-color);
-	transition: background 0.5s,transform 0.5s;
+	transition: background 0.3s,transform 0.3s;
 }
 .card:hover{
 	background: var(--main-color);
@@ -371,7 +371,7 @@ h3{
 	padding: 2px 17px;
     box-shadow: 0 .1rem .5rem var(--shadow-color);
 	border-radius: 56px;
-	transition: .4s;
+	transition: .3s;
 }
 .service .btn{
     position: absolute;
@@ -411,7 +411,7 @@ h3{
 	border-radius: 10px;
 	display: block;
     object-fit: cover;
-	transition: transform 0.5s;
+	transition: transform 0.3s;
 }
 .layer{
 	width: 100%;
@@ -430,7 +430,7 @@ h3{
 	padding: 1 3rem;
 	text-align: center;
 	font-size: 15px;
-	transition: height 1.6s;
+	transition: height 0.6s;
 }
 .layer h3{
     color: var(--white-color);
@@ -549,7 +549,7 @@ h3{
 
 /*GIF*/
 .giphy-embed{
-    position: relative
+    position: relative;
 }
 .giphy-embed img{
     position: absolute;
