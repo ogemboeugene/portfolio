@@ -287,9 +287,22 @@ main{
 }
 
 #about .about-col .img-col img{
-    width: 100%;
+    width: 80%;
+    height: 50vh;
     margin-top: 45px;
-   
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+    transform-origin: center;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+}
+/*Rotating the image in the About section.*/
+@keyframes rotate {
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
 }
 
 #about .about-col .info-col{
@@ -915,3 +928,11 @@ main{
     }
 }
 /* Contact Section END */
+.giphy-embed img{
+    bottom: -1px;
+    right: 70px;
+    width: 25%;
+    height: 25%;
+    align-items: center;
+    margin-right: -9rem;
+    }
